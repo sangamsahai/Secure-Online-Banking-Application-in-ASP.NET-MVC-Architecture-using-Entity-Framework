@@ -1,0 +1,33 @@
+Structure of the Project.
+
+
+This project is based on the ASP.NET MVC architecture.
+
+The front end presentation pages are present in the 'Views' Folder.
+All the pages use a master layout page called  '_layout.cshtml'  present in the Views/shared folder.
+
+All the Controllers are present inside the 'Controllers' folder.
+The controllers are the communication between the View and Model layer.
+
+SQL Server is used as the database.
+
+The view models are present in the Models folder , and the data models are present in the OnlineBanking.DataModel.
+
+All the business logic is performed in the OnlineBanking.BusinessProcess folder.
+This folder contains different files (For example - TransactionManager) for different functionalities.
+
+The router configuration file called RouteConfig.cs is present in the App_Start folder.
+
+
+Security HighLights of the project - 
+
+1) Passwords and other sensitive is encrypted and saved in the DataBase.
+2) For all the sensitive functionalities , a login is needed.
+3) Logged in user gets to see data only related to his account.
+4) Separation of Privilege concept is used. We have Role based access.
+5) Anti Forgery Token is used to avoid any Phishing / Cross side request forgery attack.
+6) Secure coding - Business Logic is enclosed in try catch blocks and an innocuous exception is thrown to the user.
+7) ASP.NET validations are used which extend both the client as well as server side.
+8) LINQ is used for SQL queries , and LINQ is SQL Injection proof.
+
+
