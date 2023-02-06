@@ -13,7 +13,7 @@ This will give you a local database using windows security. Note that depending 
 you may need to manually create the database, but the application will use the Entity Framework
 Code First mechanisms to create the required tables and populate them with a set of test data.
 
-The test data includes three customers:
+The test data includes three customers 123:
 Ken@email.com
 Sangam@email.com
 Jayson@email.com
